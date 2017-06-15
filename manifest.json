@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Cornstention",
+    "description": "Changes all words starting with con to corn... that's about it.",
+    "version": "1.666",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
